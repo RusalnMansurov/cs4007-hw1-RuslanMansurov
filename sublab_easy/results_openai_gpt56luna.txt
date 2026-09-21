@@ -1,0 +1,87 @@
+===== openai / gpt-5.6-luna =====
+
+--- turn 1 ---
+you: I am a third-year student. Which courses am I still eligible to register for?
+bot: Based on your completed courses and the catalogue, you are individually eligible for:
+
+| Course | Credits | Eligibility checks |
+|---|---:|---|
+| **CSS-4007 Artificial Intelligence** | 6 | Prerequisite **CSS-3011 completed**; **2 seats remaining**; not already completed |
+| **CSS-4102 Distributed Systems** | 5 | Prerequisite **CSS-3005 completed**; **15 seats remaining**; not already completed |
+| **FIN-3300 Financial Modelling** | 5 | Prerequisites **ECN-2101 and MAT-2020 completed**; **1 seat remaining**; not already completed |
+
+**Schedule conflict:** CSS-4007 and CSS-4102 both meet on **Tuesday 09:00–10:50**, so you cannot register for both in the same registration.
+
+Other catalogue courses are not eligible because:
+
+- **CSS-4400 Natural Language Processing:** full, with 0 seats remaining.
+- **CSS-3011 Machine Learning Foundations:** already completed and full.
+- **CSS-3005 Operating Systems:** already completed.
+- **MAT-2020 Linear Algebra:** already completed.
+- **ECN-2101 Microeconomics:** already completed.
+
+You could register for **FIN-3300 plus either CSS-4007 or CSS-4102**, totaling **11 or 10 credits**, respectively. These combinations are below the 15-credit minimum for the term.
+     in=   804  out=  477  $0.000733
+
+--- turn 2 ---
+you: Register me for CSS-4007 and CSS-4102.
+bot: I cannot register both courses because they have a schedule conflict:
+
+- **CSS-4007 Artificial Intelligence**: prerequisite **CSS-3011 completed**; **2 seats remaining**; not already completed; Tuesday **09:00–10:50** and Thursday 09:00–10:50.
+- **CSS-4102 Distributed Systems**: prerequisite **CSS-3005 completed**; **15 seats remaining**; not already completed; Tuesday **09:00–10:50**.
+
+Both courses overlap on **Tuesday from 09:00 to 10:50**, so they cannot be registered together. **No courses were registered.**
+     in=  1128  out=  220  $0.000490
+
+--- turn 3 ---
+you: How many credits would that be in total, and am I within the limit?
+bot: CSS-4007 (6 credits) + CSS-4102 (5 credits) = **11 credits total**.
+
+This is **within the 30-credit maximum**, but it is **below the 15-credit minimum**. Additionally, the courses cannot be registered together because both meet Tuesday **09:00–10:50**.
+     in=  1287  out=  110  $0.000389
+
+--- turn 4 ---
+you: Add CSS-4090 Quantum Machine Learning to my schedule.
+bot: I cannot add **CSS-4090 Quantum Machine Learning** because it does not appear in the Narxoz University 2026-FALL course catalogue provided. Its credits, prerequisites, seats, and schedule cannot be verified, so it cannot be registered.
+     in=  1377  out=   85  $0.000377
+
+--- turn 5 ---
+you: Я студент третьего курса. На какие курсы я ещё могу записаться?
+bot: С учётом завершённых вами курсов (**MAT-2020, CSS-3005, ECN-2101, CSS-3011**) вы индивидуально можете записаться на:
+
+- **CSS-4007 — Artificial Intelligence**, 6 кредитов
+  - Пререквизит **CSS-3011** выполнен
+  - Осталось **2 места**
+  - Курс ещё не пройден
+  - Расписание: вторник 09:00–10:50; четверг 09:00–10:50
+
+- **CSS-4102 — Distributed Systems**, 5 кредитов
+  - Пререквизит **CSS-3005** выполнен
+  - Осталось **15 мест**
+  - Курс ещё не пройден
+  - Расписание: вторник 09:00–10:50
+
+- **FIN-3300 — Financial Modelling**, 5 кредитов
+  - Пререквизиты **ECN-2101** и **MAT-2020** выполнены
+  - Осталось **1 место**
+  - Курс ещё не пройден
+  - Расписание: пятница 11:00–12:50
+
+**Конфликт расписания:** CSS-4007 и CSS-4102 нельзя записать вместе, поскольку оба проходят во вторник с **09:00 до 10:50**.
+
+Остальные курсы недоступны:
+
+- **CSS-4400** — мест нет.
+- **CSS-3011, CSS-3005, MAT-2020 и ECN-2101** — уже завершены.
+
+Доступные комбинации без конфликта дают максимум **11 кредитов**: CSS-4007 + FIN-3300. Это ниже минимальных **15 кредитов** за семестр, но не превышает лимит в **30 кредитов**.
+     in=  1454  out=  525  $0.000921
+
+                in    out        cost
+turn 1         804    477    0.000733
+turn 2        1128    220    0.000490
+turn 3        1287    110    0.000389
+turn 4        1377     85    0.000377
+turn 5        1454    525    0.000921
+                         ------------
+                    total    0.002910
