@@ -1,0 +1,709 @@
+[
+  {
+    "model": "qwen/qwen3.8-27b",
+    "id": "KZ-01",
+    "errors": [
+      "kaz_to_rus"
+    ],
+    "failed": "APIStatusError(\"Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 65536 tokens, but can only afford 11777. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'limit_source': 'openrouter_credits', 'remedy_hint': 'Add credits at https://openrouter.ai/settings/credits, or lower max_tokens / prompt size to fit your remaining balance.', 'provider_name': None, 'previous_errors': [{'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 12562. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 17130. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 32768 tokens, but can only afford 20937. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 18162. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 15075. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 20100. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 15075. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 11777. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 17130. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 14779. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 14779. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 12562. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 65536 tokens, but can only afford 17130. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 65536 tokens, but can only afford 14779. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 58861 tokens, but can only afford 14168. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}]}}, 'user_id': 'user_3JGceapzPOeymnWZuEUeFXWnf7i'}\")"
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "id": "KZ-02",
+    "errors": [
+      "drop_hyphen"
+    ],
+    "failed": "APIStatusError(\"Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 14779. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'limit_source': 'openrouter_credits', 'remedy_hint': 'Add credits at https://openrouter.ai/settings/credits, or lower max_tokens / prompt size to fit your remaining balance.', 'provider_name': None, 'previous_errors': [{'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 32768 tokens, but can only afford 20937. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 65536 tokens, but can only afford 17130. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 18162. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 14779. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 12562. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 17130. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 15075. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 15075. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 20100. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 58860 tokens, but can only afford 14168. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 17130. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 65536 tokens, but can only afford 14779. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 11777. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 12562. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 65536 tokens, but can only afford 11777. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}]}}, 'user_id': 'user_3JGceapzPOeymnWZuEUeFXWnf7i'}\")"
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "id": "KZ-03",
+    "errors": [
+      "latin_homoglyph"
+    ],
+    "failed": "APIStatusError(\"Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 12562. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'limit_source': 'openrouter_credits', 'remedy_hint': 'Add credits at https://openrouter.ai/settings/credits, or lower max_tokens / prompt size to fit your remaining balance.', 'provider_name': None, 'previous_errors': [{'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 65536 tokens, but can only afford 14779. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 32768 tokens, but can only afford 20937. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 65536 tokens, but can only afford 11777. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 14779. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 58875 tokens, but can only afford 14168. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 14779. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 20100. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 18162. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 15075. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 15075. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 11777. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 17130. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 17130. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 65536 tokens, but can only afford 17130. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 12562. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}]}}, 'user_id': 'user_3JGceapzPOeymnWZuEUeFXWnf7i'}\")"
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "id": "KZ-04",
+    "errors": [
+      "kaz_to_rus_partial"
+    ],
+    "failed": "APIStatusError(\"Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 11777. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'limit_source': 'openrouter_credits', 'remedy_hint': 'Add credits at https://openrouter.ai/settings/credits, or lower max_tokens / prompt size to fit your remaining balance.', 'provider_name': None, 'previous_errors': [{'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 20100. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 65536 tokens, but can only afford 14779. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 12562. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 15075. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 32768 tokens, but can only afford 20937. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 65536 tokens, but can only afford 17130. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 14779. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 15075. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 17130. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 65536 tokens, but can only afford 11777. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 12562. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 18162. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 17130. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 58875 tokens, but can only afford 14168. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 14779. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}]}}, 'user_id': 'user_3JGceapzPOeymnWZuEUeFXWnf7i'}\")"
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "id": "KZ-05",
+    "errors": [
+      "join_words"
+    ],
+    "failed": "APIStatusError(\"Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 65536 tokens, but can only afford 14779. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'limit_source': 'openrouter_credits', 'remedy_hint': 'Add credits at https://openrouter.ai/settings/credits, or lower max_tokens / prompt size to fit your remaining balance.', 'provider_name': None, 'previous_errors': [{'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 32768 tokens, but can only afford 20937. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 17130. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 65536 tokens, but can only afford 17130. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 17130. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 65536 tokens, but can only afford 11777. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 18162. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 14779. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 12562. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 20100. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 58872 tokens, but can only afford 14168. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 14779. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 15075. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 15075. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 11777. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 12562. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}]}}, 'user_id': 'user_3JGceapzPOeymnWZuEUeFXWnf7i'}\")"
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "id": "KZ-06",
+    "errors": [
+      "double_letter"
+    ],
+    "failed": "APIStatusError(\"Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 65536 tokens, but can only afford 11777. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'limit_source': 'openrouter_credits', 'remedy_hint': 'Add credits at https://openrouter.ai/settings/credits, or lower max_tokens / prompt size to fit your remaining balance.', 'provider_name': None, 'previous_errors': [{'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 65536 tokens, but can only afford 14779. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 32768 tokens, but can only afford 20937. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 20100. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 15075. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 65536 tokens, but can only afford 17130. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 17130. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 17130. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 11777. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 14779. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 15075. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 18162. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 58870 tokens, but can only afford 14168. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 12562. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 14779. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 12562. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}]}}, 'user_id': 'user_3JGceapzPOeymnWZuEUeFXWnf7i'}\")"
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "id": "KZ-07",
+    "errors": [
+      "kaz_to_rus",
+      "join_words"
+    ],
+    "failed": "APIStatusError(\"Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 11777. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'limit_source': 'openrouter_credits', 'remedy_hint': 'Add credits at https://openrouter.ai/settings/credits, or lower max_tokens / prompt size to fit your remaining balance.', 'provider_name': None, 'previous_errors': [{'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 12562. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 32768 tokens, but can only afford 20937. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 20100. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 14779. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 15075. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 65536 tokens, but can only afford 17130. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 17130. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 18162. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 15075. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 65536 tokens, but can only afford 14779. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 14779. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 65536 tokens, but can only afford 11777. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 58869 tokens, but can only afford 14168. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 17130. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 12562. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}]}}, 'user_id': 'user_3JGceapzPOeymnWZuEUeFXWnf7i'}\")"
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "id": "KZ-08",
+    "errors": [
+      "latin_homoglyph",
+      "double_letter"
+    ],
+    "failed": "APIStatusError(\"Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 58871 tokens, but can only afford 14168. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'limit_source': 'openrouter_credits', 'remedy_hint': 'Add credits at https://openrouter.ai/settings/credits, or lower max_tokens / prompt size to fit your remaining balance.', 'provider_name': None, 'previous_errors': [{'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 32768 tokens, but can only afford 20937. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 15075. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 15075. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 20100. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 17130. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 18162. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 14779. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 12562. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 17130. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 14779. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 65536 tokens, but can only afford 17130. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 65536 tokens, but can only afford 14779. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 65536 tokens, but can only afford 11777. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 11777. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}, {'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 131072 tokens, but can only afford 12562. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}]}}, 'user_id': 'user_3JGceapzPOeymnWZuEUeFXWnf7i'}\")"
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "id": "KZ-01",
+    "errors": [
+      "kaz_to_rus"
+    ],
+    "corrupted": "Касым-Жомарт Токаев биркатар мемлекеттин елшисинен сеним грамоталарын кабылдады",
+    "expected": "Қасым-Жомарт Тоқаев бірқатар мемлекеттің елшісінен сенім грамоталарын қабылдады",
+    "corrected": "Қасым-Жомарт Тоқаев бірқатар мемлекеттің елшісінен сенім грамоталарын қабылдады",
+    "changes": [
+      "Касым -> Қасым",
+      "Токаев -> Тоқаев",
+      "биркатар -> бірқатар",
+      "мемлекеттин -> мемлекеттің",
+      "елшисинен -> елшісінен",
+      "сеним -> сенім",
+      "кабылдады -> қабылдады"
+    ],
+    "exact": true,
+    "char_diff": 0,
+    "input_tokens": 190,
+    "output_tokens": 10695,
+    "cost": 0.0030212
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "id": "KZ-02",
+    "errors": [
+      "drop_hyphen"
+    ],
+    "corrupted": "Баспанада 50% ға дейін үлесі бар азаматтар мемлекеттік тұрғын үйді жекешелендіре алады",
+    "expected": "Баспанада 50%-ға дейін үлесі бар азаматтар мемлекеттік тұрғын үйді жекешелендіре алады",
+    "corrected": "Баспанада 50%-ға дейін үлесі бар азаматтар мемлекеттік тұрғын үйді жекешелендіре алады",
+    "changes": [
+      "Added hyphen between '50%' and 'ға' and removed the space: '50% ға' → '50%-ға'"
+    ],
+    "exact": true,
+    "char_diff": 0,
+    "input_tokens": 196,
+    "output_tokens": 8332,
+    "cost": 0.0023604000000000008
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "id": "KZ-03",
+    "errors": [
+      "latin_homoglyph"
+    ],
+    "corrupted": "Aлaяқtарға ақшаңызды аударып қойсаңыз не істеу керек",
+    "expected": "Алаяқтарға ақшаңызды аударып қойсаңыз не істеу керек",
+    "corrected": "Алаяқтарға ақшаңызды аударып қойсаңыз, не істеу керек?",
+    "changes": [
+      "Latin letters A, a, t replaced with Cyrillic А, а, т",
+      "Added comma after қойсаңыз",
+      "Added question mark at the end"
+    ],
+    "exact": false,
+    "char_diff": 17,
+    "input_tokens": 185,
+    "output_tokens": 3028,
+    "cost": 0.0008737400000000001
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "id": "KZ-04",
+    "errors": [
+      "kaz_to_rus_partial"
+    ],
+    "corrupted": "Елде жалган дипломдар ушін қандай жаза қарастырылған",
+    "expected": "Елде жалған дипломдар үшін қандай жаза қарастырылған",
+    "corrected": "Елде жалған дипломдар үшін қандай жаза қарастырылған?",
+    "changes": [
+      "жалган -> жалған",
+      "ушін -> үшін",
+      "сөйлем соңына сұрақ белгісі қойылды"
+    ],
+    "exact": false,
+    "char_diff": 1,
+    "input_tokens": 178,
+    "output_tokens": 496,
+    "cost": 0.00016380000000000002
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "id": "KZ-05",
+    "errors": [
+      "join_words"
+    ],
+    "corrupted": "Алматыдағы ғимараттардыңқаншасы жер сілкінісіне төзімді",
+    "expected": "Алматыдағы ғимараттардың қаншасы жер сілкінісіне төзімді",
+    "corrected": "Алматыдағы ғимараттардың қаншасы жер сілкінісіне төзімді?",
+    "changes": [
+      "ғимараттардыңқаншасы сөзін екі сөзге бөлдім",
+      "сөйлем соңына сұрақ белгісін қостым"
+    ],
+    "exact": false,
+    "char_diff": 1,
+    "input_tokens": 183,
+    "output_tokens": 335,
+    "cost": 0.00011942000000000002
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "id": "KZ-06",
+    "errors": [
+      "double_letter"
+    ],
+    "corrupted": "Елде жжеті айда 9,7 млн шаршы метр тұрғын үй пайдалануға берілді",
+    "expected": "Елде жеті айда 9,7 млн шаршы метр тұрғын үй пайдалануға берілді",
+    "corrected": "Елде жеті айда 9,7 млн шаршы метр тұрғын үй пайдалануға берілді.",
+    "changes": [
+      "жжеті -> жеті (қосарланған ж әрпін алып тастау)"
+    ],
+    "exact": false,
+    "char_diff": 1,
+    "input_tokens": 186,
+    "output_tokens": 327,
+    "cost": 0.0001176
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "id": "KZ-07",
+    "errors": [
+      "kaz_to_rus",
+      "join_words"
+    ],
+    "corrupted": "Алаяктардан корганужолдары: елорда прокуратурасы ескерту жасады",
+    "expected": "Алаяқтардан қорғану жолдары: елорда прокуратурасы ескерту жасады",
+    "corrected": "Алаяқтардан қорғану жолдары: елорда прокуратурасы ескерту жасады",
+    "changes": [
+      "Replace 'к' with 'қ' in 'Алаяктардан' to form 'Алаяқтардан'",
+      "Replace 'к' with 'қ' and 'г' with 'ғ' in 'коргану' to form 'қорғану'",
+      "Add space between 'қорғану' and 'жолдары'"
+    ],
+    "exact": true,
+    "char_diff": 0,
+    "input_tokens": 100,
+    "output_tokens": 1072,
+    "cost": 0.00031416000000000007
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "id": "KZ-08",
+    "errors": [
+      "latin_homoglyph",
+      "double_letter"
+    ],
+    "corrupted": "Дoнaлльд Tрамп Ким Чен Ынмен осы күзде қайта кездескісі келеді",
+    "expected": "Дональд Трамп Ким Чен Ынмен осы күзде қайта кездескісі келеді",
+    "corrected": "Дональд Трамп Ким Чен Ынмен осы күзде қайта кездескісі келеді",
+    "changes": [
+      "Replaced Latin 'o' with Cyrillic 'о' in 'Дональд'",
+      "Replaced Latin 'a' with Cyrillic 'а' in 'Дональд'",
+      "Replaced Latin 'T' with Cyrillic 'Т' in 'Трамп'"
+    ],
+    "exact": true,
+    "char_diff": 0,
+    "input_tokens": 188,
+    "output_tokens": 893,
+    "cost": 0.00027636
+  },
+  {
+    "model": "gpt-5.6-luna",
+    "id": "KZ-01",
+    "errors": [
+      "kaz_to_rus"
+    ],
+    "corrupted": "Касым-Жомарт Токаев биркатар мемлекеттин елшисинен сеним грамоталарын кабылдады",
+    "expected": "Қасым-Жомарт Тоқаев бірқатар мемлекеттің елшісінен сенім грамоталарын қабылдады",
+    "corrected": "Қасым-Жомарт Тоқаев бірқатар мемлекеттің елшілерінен сенім грамоталарын қабылдады",
+    "changes": [
+      "«Касым» сөзі «Қасым» болып түзетілді.",
+      "«Токаев» сөзі «Тоқаев» болып түзетілді.",
+      "«биркатар» сөзі «бірқатар» болып түзетілді.",
+      "«мемлекеттин» сөзі «мемлекеттің» болып түзетілді.",
+      "«елшисинен» сөзі «елшілерінен» болып түзетілді.",
+      "«сеним» сөзі «сенім» болып түзетілді.",
+      "«кабылдады» сөзі «қабылдады» болып түзетілді."
+    ],
+    "exact": false,
+    "char_diff": 33,
+    "input_tokens": 102,
+    "output_tokens": 447,
+    "cost": 0.0005568
+  },
+  {
+    "model": "gpt-5.6-luna",
+    "id": "KZ-02",
+    "errors": [
+      "drop_hyphen"
+    ],
+    "corrupted": "Баспанада 50% ға дейін үлесі бар азаматтар мемлекеттік тұрғын үйді жекешелендіре алады",
+    "expected": "Баспанада 50%-ға дейін үлесі бар азаматтар мемлекеттік тұрғын үйді жекешелендіре алады",
+    "corrected": "Баспанада 50%-ға дейін үлесі бар азаматтар мемлекеттік тұрғын үйді жекешелендіре алады.",
+    "changes": [
+      "«50% ға» тіркесі «50%-ға» болып түзетілді.",
+      "Сөйлем соңына нүкте қойылды."
+    ],
+    "exact": false,
+    "char_diff": 1,
+    "input_tokens": 100,
+    "output_tokens": 237,
+    "cost": 0.00030439999999999997
+  },
+  {
+    "model": "gpt-5.6-luna",
+    "id": "KZ-03",
+    "errors": [
+      "latin_homoglyph"
+    ],
+    "corrupted": "Aлaяқtарға ақшаңызды аударып қойсаңыз не істеу керек",
+    "expected": "Алаяқтарға ақшаңызды аударып қойсаңыз не істеу керек",
+    "corrected": "Алаяқтарға ақшаңызды аударып қойсаңыз, не істеу керек?",
+    "changes": [
+      "Латын әліпбиіндегі «A», «a», «t» әріптері кирилл әліпбиіндегі «А», «а», «т» әріптеріне ауыстырылды",
+      "Шартты бағыныңқы сөйлемнен кейін үтір қойылды",
+      "Сөйлем соңына сұрақ белгісі қойылды"
+    ],
+    "exact": false,
+    "char_diff": 17,
+    "input_tokens": 96,
+    "output_tokens": 334,
+    "cost": 0.00041999999999999996
+  },
+  {
+    "model": "gpt-5.6-luna",
+    "id": "KZ-04",
+    "errors": [
+      "kaz_to_rus_partial"
+    ],
+    "corrupted": "Елде жалган дипломдар ушін қандай жаза қарастырылған",
+    "expected": "Елде жалған дипломдар үшін қандай жаза қарастырылған",
+    "corrected": "Елде жалған дипломдар үшін қандай жаза қарастырылған?",
+    "changes": [
+      "«жалган» сөзі «жалған» болып түзетілді: «г» әрпі «ғ» әрпімен ауыстырылды.",
+      "«ушін» сөзі «үшін» болып түзетілді: «у» әрпі «ү» әрпімен ауыстырылды.",
+      "Сөйлем соңына сұрақ белгісі қойылды."
+    ],
+    "exact": false,
+    "char_diff": 1,
+    "input_tokens": 90,
+    "output_tokens": 182,
+    "cost": 0.0002364
+  },
+  {
+    "model": "gpt-5.6-luna",
+    "id": "KZ-05",
+    "errors": [
+      "join_words"
+    ],
+    "corrupted": "Алматыдағы ғимараттардыңқаншасы жер сілкінісіне төзімді",
+    "expected": "Алматыдағы ғимараттардың қаншасы жер сілкінісіне төзімді",
+    "corrected": "Алматыдағы ғимараттардың қаншасы жер сілкінісіне төзімді?",
+    "changes": [
+      "«ғимараттардыңқаншасы» сөздерін бөлек жазып, «ғимараттардың қаншасы» деп түзетілді.",
+      "Сөйлем соңына сұрау белгісі қойылды."
+    ],
+    "exact": false,
+    "char_diff": 1,
+    "input_tokens": 95,
+    "output_tokens": 147,
+    "cost": 0.00019539999999999998
+  },
+  {
+    "model": "gpt-5.6-luna",
+    "id": "KZ-06",
+    "errors": [
+      "double_letter"
+    ],
+    "corrupted": "Елде жжеті айда 9,7 млн шаршы метр тұрғын үй пайдалануға берілді",
+    "expected": "Елде жеті айда 9,7 млн шаршы метр тұрғын үй пайдалануға берілді",
+    "corrected": "Елде жеті айда 9,7 млн шаршы метр тұрғын үй пайдалануға берілді.",
+    "changes": [
+      "«жжеті» сөзіндегі артық «ж» әрпі алынып тасталды.",
+      "Сөйлем соңына нүкте қойылды."
+    ],
+    "exact": false,
+    "char_diff": 1,
+    "input_tokens": 97,
+    "output_tokens": 256,
+    "cost": 0.00032659999999999997
+  },
+  {
+    "model": "gpt-5.6-luna",
+    "id": "KZ-07",
+    "errors": [
+      "kaz_to_rus",
+      "join_words"
+    ],
+    "corrupted": "Алаяктардан корганужолдары: елорда прокуратурасы ескерту жасады",
+    "expected": "Алаяқтардан қорғану жолдары: елорда прокуратурасы ескерту жасады",
+    "corrected": "Алаяқтардан қорғану жолдары: елорда прокуратурасы ескерту жасады",
+    "changes": [
+      "«Алаяктардан» сөзі «Алаяқтардан» болып түзетілді: «к» әрпі «қ» әрпіне ауыстырылды.",
+      "«корганужолдары» сөзі «қорғану жолдары» болып түзетілді: «к» әрпі «қ»-ға, «г» әрпі «ғ»-ға ауыстырылып, сөздер ажыратылды."
+    ],
+    "exact": true,
+    "char_diff": 0,
+    "input_tokens": 97,
+    "output_tokens": 280,
+    "cost": 0.00035539999999999997
+  },
+  {
+    "model": "gpt-5.6-luna",
+    "id": "KZ-08",
+    "errors": [
+      "latin_homoglyph",
+      "double_letter"
+    ],
+    "corrupted": "Дoнaлльд Tрамп Ким Чен Ынмен осы күзде қайта кездескісі келеді",
+    "expected": "Дональд Трамп Ким Чен Ынмен осы күзде қайта кездескісі келеді",
+    "corrected": "Дональд Трамп Ким Чен Ынмен осы күзде қайта кездескісі келеді",
+    "changes": [
+      "Латынның «o» және «a» әріптері кириллдің «о» және «а» әріптеріне ауыстырылды",
+      "Қосарланған «лл» әріптері «л» болып түзетілді"
+    ],
+    "exact": true,
+    "char_diff": 0,
+    "input_tokens": 100,
+    "output_tokens": 308,
+    "cost": 0.0003896
+  },
+  {
+    "model": "gpt-5.6-terra",
+    "id": "KZ-01",
+    "errors": [
+      "kaz_to_rus"
+    ],
+    "corrupted": "Касым-Жомарт Токаев биркатар мемлекеттин елшисинен сеним грамоталарын кабылдады",
+    "expected": "Қасым-Жомарт Тоқаев бірқатар мемлекеттің елшісінен сенім грамоталарын қабылдады",
+    "corrected": "Қасым-Жомарт Тоқаев бірқатар мемлекеттің елшілерінен сенім грамоталарын қабылдады",
+    "changes": [
+      "Касым → Қасым",
+      "Токаев → Тоқаев",
+      "биркатар → бірқатар",
+      "мемлекеттин → мемлекеттің",
+      "елшисинен → елшілерінен",
+      "сеним → сенім",
+      "кабылдады → қабылдады"
+    ],
+    "exact": false,
+    "char_diff": 33,
+    "input_tokens": 102,
+    "output_tokens": 223,
+    "cost": 0.00288
+  },
+  {
+    "model": "gpt-5.6-terra",
+    "id": "KZ-02",
+    "errors": [
+      "drop_hyphen"
+    ],
+    "corrupted": "Баспанада 50% ға дейін үлесі бар азаматтар мемлекеттік тұрғын үйді жекешелендіре алады",
+    "expected": "Баспанада 50%-ға дейін үлесі бар азаматтар мемлекеттік тұрғын үйді жекешелендіре алады",
+    "corrected": "Баспанада 50%-ға дейінгі үлесі бар азаматтар мемлекеттік тұрғын үйді жекешелендіре алады.",
+    "changes": [
+      "«50% ға» тіркесі «50%-ға» болып, дефис қосылды.",
+      "«дейін үлесі» тіркесі грамматикалық тұрғыдан дұрыс «дейінгі үлесі» болып түзетілді."
+    ],
+    "exact": false,
+    "char_diff": 59,
+    "input_tokens": 100,
+    "output_tokens": 270,
+    "cost": 0.00344
+  },
+  {
+    "model": "gpt-5.6-terra",
+    "id": "KZ-03",
+    "errors": [
+      "latin_homoglyph"
+    ],
+    "corrupted": "Aлaяқtарға ақшаңызды аударып қойсаңыз не істеу керек",
+    "expected": "Алаяқтарға ақшаңызды аударып қойсаңыз не істеу керек",
+    "corrected": "Алаяқтарға ақшаңызды аударып қойсаңыз, не істеу керек?",
+    "changes": [
+      "Латын әріптері кирилл әріптеріне ауыстырылды: «Aлaяқtарға» → «Алаяқтарға».",
+      "Үтір мен сұрақ белгісі қосылды."
+    ],
+    "exact": false,
+    "char_diff": 17,
+    "input_tokens": 96,
+    "output_tokens": 177,
+    "cost": 0.002316
+  },
+  {
+    "model": "gpt-5.6-terra",
+    "id": "KZ-04",
+    "errors": [
+      "kaz_to_rus_partial"
+    ],
+    "corrupted": "Елде жалган дипломдар ушін қандай жаза қарастырылған",
+    "expected": "Елде жалған дипломдар үшін қандай жаза қарастырылған",
+    "corrected": "Елде жалған дипломдар үшін қандай жаза қарастырылған?",
+    "changes": [
+      "«жалган» сөзі «жалған» болып түзетілді.",
+      "Сөйлем соңына сұрақ белгісі қойылды."
+    ],
+    "exact": false,
+    "char_diff": 1,
+    "input_tokens": 90,
+    "output_tokens": 137,
+    "cost": 0.001824
+  },
+  {
+    "model": "gpt-5.6-terra",
+    "id": "KZ-05",
+    "errors": [
+      "join_words"
+    ],
+    "corrupted": "Алматыдағы ғимараттардыңқаншасы жер сілкінісіне төзімді",
+    "expected": "Алматыдағы ғимараттардың қаншасы жер сілкінісіне төзімді",
+    "corrected": "Алматыдағы ғимараттардың қаншасы жер сілкінісіне төзімді?",
+    "changes": [
+      "«ғимараттардыңқаншасы» сөздері бөлек жазылды: «ғимараттардың қаншасы».",
+      "Сұраулы сөйлем болғандықтан соңына сұрақ белгісі қойылды."
+    ],
+    "exact": false,
+    "char_diff": 1,
+    "input_tokens": 95,
+    "output_tokens": 76,
+    "cost": 0.0011020000000000001
+  },
+  {
+    "model": "gpt-5.6-terra",
+    "id": "KZ-06",
+    "errors": [
+      "double_letter"
+    ],
+    "corrupted": "Елде жжеті айда 9,7 млн шаршы метр тұрғын үй пайдалануға берілді",
+    "expected": "Елде жеті айда 9,7 млн шаршы метр тұрғын үй пайдалануға берілді",
+    "corrected": "Елде жеті айда 9,7 млн шаршы метр тұрғын үй пайдалануға берілді",
+    "changes": [
+      "«жжеті» сөзі «жеті» болып түзетілді"
+    ],
+    "exact": true,
+    "char_diff": 0,
+    "input_tokens": 97,
+    "output_tokens": 97,
+    "cost": 0.001358
+  },
+  {
+    "model": "gpt-5.6-terra",
+    "id": "KZ-07",
+    "errors": [
+      "kaz_to_rus",
+      "join_words"
+    ],
+    "corrupted": "Алаяктардан корганужолдары: елорда прокуратурасы ескерту жасады",
+    "expected": "Алаяқтардан қорғану жолдары: елорда прокуратурасы ескерту жасады",
+    "corrected": "Алаяқтардан қорғану жолдары: Елорда прокуратурасы ескерту жасады",
+    "changes": [
+      "«Алаяктардан» сөзі «Алаяқтардан» болып түзетілді.",
+      "«корганужолдары» сөзі «қорғану жолдары» болып түзетілді.",
+      "«елорда» сөзі «Елорда» болып бас әріппен жазылды."
+    ],
+    "exact": false,
+    "char_diff": 1,
+    "input_tokens": 97,
+    "output_tokens": 186,
+    "cost": 0.002426
+  },
+  {
+    "model": "gpt-5.6-terra",
+    "id": "KZ-08",
+    "errors": [
+      "latin_homoglyph",
+      "double_letter"
+    ],
+    "corrupted": "Дoнaлльд Tрамп Ким Чен Ынмен осы күзде қайта кездескісі келеді",
+    "expected": "Дональд Трамп Ким Чен Ынмен осы күзде қайта кездескісі келеді",
+    "corrected": "Дональд Трамп Ким Чен Ынмен осы күзде қайта кездескісі келеді",
+    "changes": [
+      "Латын әріптері «o» және «a» кирилл әріптері «о» және «а»-ға ауыстырылды",
+      "«Дoнaлльд» сөзіндегі артық «л» әрпі алынып, «Дональд» болып түзетілді",
+      "Латын әрпі «T» кирилл әрпі «Т»-ға ауыстырылды"
+    ],
+    "exact": true,
+    "char_diff": 0,
+    "input_tokens": 100,
+    "output_tokens": 273,
+    "cost": 0.0034760000000000004
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "id": "KZ-01",
+    "errors": [
+      "kaz_to_rus"
+    ],
+    "corrupted": "Касым-Жомарт Токаев биркатар мемлекеттин елшисинен сеним грамоталарын кабылдады",
+    "expected": "Қасым-Жомарт Тоқаев бірқатар мемлекеттің елшісінен сенім грамоталарын қабылдады",
+    "corrected": "Қасым-Жомарт Тоқаев бірқатар мемлекеттің елшілерінен сенім грамоталарын қабылдады",
+    "changes": [
+      "Касым → Қасым",
+      "Токаев → Тоқаев",
+      "биркатар → бірқатар",
+      "мемлекеттин → мемлекеттің",
+      "елшисинен → елшілерінен",
+      "сеним → сенім",
+      "кабылдады → қабылдады"
+    ],
+    "exact": false,
+    "char_diff": 33,
+    "input_tokens": 102,
+    "output_tokens": 214,
+    "cost": 0.00693
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "id": "KZ-02",
+    "errors": [
+      "drop_hyphen"
+    ],
+    "corrupted": "Баспанада 50% ға дейін үлесі бар азаматтар мемлекеттік тұрғын үйді жекешелендіре алады",
+    "expected": "Баспанада 50%-ға дейін үлесі бар азаматтар мемлекеттік тұрғын үйді жекешелендіре алады",
+    "corrected": "Баспанада 50%-ға дейін үлесі бар азаматтар мемлекеттік тұрғын үйді жекешелендіре алады",
+    "changes": [
+      "«50% ға» тіркесі дефис арқылы «50%-ға» болып түзетілді."
+    ],
+    "exact": true,
+    "char_diff": 0,
+    "input_tokens": 100,
+    "output_tokens": 152,
+    "cost": 0.00506
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "id": "KZ-03",
+    "errors": [
+      "latin_homoglyph"
+    ],
+    "corrupted": "Aлaяқtарға ақшаңызды аударып қойсаңыз не істеу керек",
+    "expected": "Алаяқтарға ақшаңызды аударып қойсаңыз не істеу керек",
+    "corrected": "Алаяқтарға ақшаңызды аударып қойсаңыз, не істеу керек?",
+    "changes": [
+      "«Aлaяқtарға» сөзіндегі латын әріптері кирилл әріптерімен ауыстырылды: «Алаяқтарға».",
+      "«қойсаңыз» сөзінен кейін үтір қойылды.",
+      "Сөйлем соңына сұрақ белгісі қойылды."
+    ],
+    "exact": false,
+    "char_diff": 17,
+    "input_tokens": 96,
+    "output_tokens": 199,
+    "cost": 0.006450000000000001
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "id": "KZ-04",
+    "errors": [
+      "kaz_to_rus_partial"
+    ],
+    "corrupted": "Елде жалган дипломдар ушін қандай жаза қарастырылған",
+    "expected": "Елде жалған дипломдар үшін қандай жаза қарастырылған",
+    "corrected": "Елде жалған дипломдар үшін қандай жаза қарастырылған?",
+    "changes": [
+      "«жалган» сөзі «жалған» болып түзетілді.",
+      "«ушін» сөзі «үшін» болып түзетілді.",
+      "Сөйлем соңына сұрау белгісі қойылды."
+    ],
+    "exact": false,
+    "char_diff": 1,
+    "input_tokens": 90,
+    "output_tokens": 134,
+    "cost": 0.00447
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "id": "KZ-05",
+    "errors": [
+      "join_words"
+    ],
+    "corrupted": "Алматыдағы ғимараттардыңқаншасы жер сілкінісіне төзімді",
+    "expected": "Алматыдағы ғимараттардың қаншасы жер сілкінісіне төзімді",
+    "corrected": "Алматыдағы ғимараттардың қаншасы жер сілкінісіне төзімді?",
+    "changes": [
+      "«ғимараттардыңқаншасы» тіркесі «ғимараттардың қаншасы» болып ажыратылды.",
+      "Сөйлем соңына сұрау белгісі қойылды."
+    ],
+    "exact": false,
+    "char_diff": 1,
+    "input_tokens": 95,
+    "output_tokens": 73,
+    "cost": 0.0026650000000000003
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "id": "KZ-06",
+    "errors": [
+      "double_letter"
+    ],
+    "corrupted": "Елде жжеті айда 9,7 млн шаршы метр тұрғын үй пайдалануға берілді",
+    "expected": "Елде жеті айда 9,7 млн шаршы метр тұрғын үй пайдалануға берілді",
+    "corrected": "Елде жеті айда 9,7 млн шаршы метр тұрғын үй пайдалануға берілді",
+    "changes": [
+      "«жжеті» сөзіндегі артық «ж» әрпі алынып, «жеті» болып түзетілді"
+    ],
+    "exact": true,
+    "char_diff": 0,
+    "input_tokens": 97,
+    "output_tokens": 100,
+    "cost": 0.0034850000000000003
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "id": "KZ-07",
+    "errors": [
+      "kaz_to_rus",
+      "join_words"
+    ],
+    "corrupted": "Алаяктардан корганужолдары: елорда прокуратурасы ескерту жасады",
+    "expected": "Алаяқтардан қорғану жолдары: елорда прокуратурасы ескерту жасады",
+    "corrected": "Алаяқтардан қорғану жолдары: елорда прокуратурасы ескерту жасады",
+    "changes": [
+      "«Алаяктардан» сөзі «Алаяқтардан» болып түзетілді.",
+      "«корганужолдары» тіркесі «қорғану жолдары» болып түзетіліп, сөздер ажыратылды және қ, ғ әріптері қалпына келтірілді."
+    ],
+    "exact": true,
+    "char_diff": 0,
+    "input_tokens": 97,
+    "output_tokens": 207,
+    "cost": 0.0066949999999999996
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "id": "KZ-08",
+    "errors": [
+      "latin_homoglyph",
+      "double_letter"
+    ],
+    "corrupted": "Дoнaлльд Tрамп Ким Чен Ынмен осы күзде қайта кездескісі келеді",
+    "expected": "Дональд Трамп Ким Чен Ынмен осы күзде қайта кездескісі келеді",
+    "corrected": "Дональд Трамп Ким Чен Ынмен осы күзде қайта кездескісі келеді",
+    "changes": [
+      "«Дoнaлльд» сөзіндегі латынның «o», «a» әріптері кириллдің «о», «а» әріптеріне ауыстырылды және артық «л» алынып, «Дональд» болып түзетілді.",
+      "«Tрамп» сөзіндегі латынның «T» әрпі кириллдің «Т» әрпіне ауыстырылды."
+    ],
+    "exact": true,
+    "char_diff": 0,
+    "input_tokens": 100,
+    "output_tokens": 292,
+    "cost": 0.009260000000000001
+  }
+]

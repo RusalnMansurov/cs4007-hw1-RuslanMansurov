@@ -1,0 +1,104 @@
+[
+  {
+    "model": "qwen/qwen3.8-27b",
+    "id": "KZ-01",
+    "errors": [
+      "kaz_to_rus"
+    ],
+    "failed": "AttributeError(\"'NoneType' object has no attribute 'strip'\")"
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "id": "KZ-02",
+    "errors": [
+      "drop_hyphen"
+    ],
+    "failed": "AttributeError(\"'NoneType' object has no attribute 'strip'\")"
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "id": "KZ-03",
+    "errors": [
+      "latin_homoglyph"
+    ],
+    "corrupted": "Aлaяқtарға ақшаңызды аударып қойсаңыз не істеу керек",
+    "expected": "Алаяқтарға ақшаңызды аударып қойсаңыз не істеу керек",
+    "corrected": "Алаяқтарға ақшаңызды аударып қойсаңыз не істеу керек?",
+    "changes": [
+      "Replaced the mixed-alphabet word Aлaяқtарға with the correct Kazakh Cyrillic word Алаяқтарға.",
+      "Added a question mark at the end."
+    ],
+    "exact": false,
+    "char_diff": 1,
+    "input_tokens": 147,
+    "output_tokens": 2145,
+    "cost": 0.006930150000000001
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "id": "KZ-04",
+    "errors": [
+      "kaz_to_rus_partial"
+    ],
+    "corrupted": "Елде жалган дипломдар ушін қандай жаза қарастырылған",
+    "expected": "Елде жалған дипломдар үшін қандай жаза қарастырылған",
+    "corrected": "Елде жалған дипломдар үшін қандай жаза қарастырылған?",
+    "changes": [
+      "Changed \"жалган\" to \"жалған\"",
+      "Changed \"ушін\" to \"үшін\"",
+      "Added a question mark"
+    ],
+    "exact": false,
+    "char_diff": 1,
+    "input_tokens": 213,
+    "output_tokens": 435,
+    "cost": 0.00148785
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "id": "KZ-05",
+    "errors": [
+      "join_words"
+    ],
+    "failed": "AttributeError(\"'NoneType' object has no attribute 'strip'\")"
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "id": "KZ-06",
+    "errors": [
+      "double_letter"
+    ],
+    "failed": "AttributeError(\"'NoneType' object has no attribute 'strip'\")"
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "id": "KZ-07",
+    "errors": [
+      "kaz_to_rus",
+      "join_words"
+    ],
+    "failed": "AttributeError(\"'NoneType' object has no attribute 'strip'\")"
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "id": "KZ-08",
+    "errors": [
+      "latin_homoglyph",
+      "double_letter"
+    ],
+    "corrupted": "Дoнaлльд Tрамп Ким Чен Ынмен осы күзде қайта кездескісі келеді",
+    "expected": "Дональд Трамп Ким Чен Ынмен осы күзде қайта кездескісі келеді",
+    "corrected": "Дональд Трамп Ким Чен Ынмен осы күзде қайта кездескісі келеді",
+    "changes": [
+      "Replaced Latin 'o' with Cyrillic 'о' in the first name.",
+      "Replaced Latin 'a' with Cyrillic 'а' in the first name.",
+      "Removed the doubled 'л' in the first name.",
+      "Replaced Latin 'T' with Cyrillic 'Т' in the surname."
+    ],
+    "exact": true,
+    "char_diff": 0,
+    "input_tokens": 152,
+    "output_tokens": 3189,
+    "cost": 0.0102732
+  }
+]

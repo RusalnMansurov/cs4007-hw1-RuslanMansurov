@@ -17,7 +17,7 @@ DATA = Path(__file__).resolve().parent.parent / "data" / "kazakh_errors.json"
 
 
 MODELS = [
-    ("openrouter", "google/gemma-4-26b-a4b-it:free"),
+    ("groq", "openai/gpt-oss-120b"),
     ("openrouter", "qwen/qwen3.8-27b"),
     ("openrouter", "deepseek/deepseek-v4-flash-0731"),
     ("openai", "gpt-5.6-luna"),
@@ -26,8 +26,12 @@ MODELS = [
 ]
 
 
+# Instructor-approved substitute for the OpenRouter free model
+# (google/gemma-4-26b-a4b-it:free), whose shared rate limit was
+# consistently exhausted by every student running this assignment at once.
+# Groq's free tier uses a personal, non-shared rate limit instead.
 FREE_MODELS = [
-    ("openrouter", "google/gemma-4-26b-a4b-it:free"),
+    ("groq", "openai/gpt-oss-120b"),
 ]
 
 
@@ -117,14 +121,15 @@ def correct_with(model: str, corrupted: str, via: str) -> dict:
 
     prompt = build_prompt(corrupted)
 
-    # Qwen needs a small max_tokens limit.
-    if model == "qwen/qwen3.8-27b":
+    # Qwen and other reasoning-heavy models need a token cap so they don't
+    # burn their whole budget on internal reasoning before answering.
+    if model in ("qwen/qwen3.8-27b", "openai/gpt-oss-120b"):
 
         response = ask_once(
             prompt,
             model=model,
             via=via,
-            max_tokens=500,
+            max_tokens=1500,
         )
 
     else:
@@ -341,137 +346,106 @@ def save_results(rows: list[dict], filename: str) -> None:
         ),
         encoding="utf-8",
     )
-
     print()
     print("=" * 60)
     print(f"Saved {len(rows)} results")
     print(f"File: {output_file}")
     print("=" * 60)
 
-
 def main() -> None:
-
     print()
     print("=" * 60)
     print("KAZAKH CORRECTION EXPERIMENT")
     print("=" * 60)
-
     print()
     print("Choose mode:")
     print("1 - FREE model only")
     print("2 - ALL PAID models")
     print("3 - QWEN only")
     print("0 - Exit")
-
     print()
-
     choice = input(
         "Enter 1, 2, 3 or 0: "
     ).strip()
-
     # FREE MODE
     if choice == "1":
-
         print()
         print("FREE MODE")
-        print("Model: Gemma")
+        print("Model: openai/gpt-oss-120b (via Groq)")
+        print("(substitute for OpenRouter's free Gemma - instructor-approved,")
+        print(" see SUBMISSION.md)")
         print("Requests: 8")
-
         results = run_all(
             FREE_MODELS
         )
-
         summarise(
             results,
             FREE_MODELS
         )
-
         save_results(
             results,
             "free_corrections.json"
         )
-
     # ALL PAID MODELS
     elif choice == "2":
-
         print()
         print("=" * 60)
         print("WARNING: ALL PAID MODELS")
         print("=" * 60)
-
         print()
         print("5 models x 8 sentences")
         print("Total: 40 paid requests")
-
         confirm = input(
             "Type YES to continue: "
         ).strip()
-
         if confirm != "YES":
             print("Cancelled.")
             return
-
         results = run_all(
             PAID_MODELS
         )
-
         summarise(
             results,
             PAID_MODELS
         )
-
         save_results(
             results,
             "paid_corrections.json"
         )
-
     # QWEN ONLY
     elif choice == "3":
-
         print()
         print("=" * 60)
         print("QWEN ONLY MODE")
         print("=" * 60)
-
         print()
         print("Model: qwen/qwen3.8-27b")
         print("Requests: 8")
         print("DeepSeek and GPT models will NOT run.")
-
         print()
-
         confirm = input(
             "Type YES to start Qwen: "
         ).strip()
-
         if confirm != "YES":
             print("Cancelled.")
             return
-
         results = run_all(
             QWEN_ONLY
         )
-
         summarise(
             results,
             QWEN_ONLY
         )
-
         save_results(
             results,
             "qwen_corrections.json"
         )
-
     elif choice == "0":
-
         print("Exit.")
         return
-
     else:
-
         print("Invalid choice.")
         return
-
 
 if __name__ == "__main__":
     main()

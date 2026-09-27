@@ -1,0 +1,167 @@
+[
+  {
+    "model": "openai/gpt-oss-120b",
+    "id": "KZ-01",
+    "errors": [
+      "kaz_to_rus"
+    ],
+    "corrupted": "Касым-Жомарт Токаев биркатар мемлекеттин елшисинен сеним грамоталарын кабылдады",
+    "expected": "Қасым-Жомарт Тоқаев бірқатар мемлекеттің елшісінен сенім грамоталарын қабылдады",
+    "corrected": "Қасым-Жомарт Тоқаев бірқатар мемлекеттердің елшілерінен сенім хаттарын қабылдады.",
+    "changes": [
+      "Касым-Жомарт → Қасым-Жомарт (К→Қ)",
+      "Токаев → Тоқаев (к→қ)",
+      "биркатар → бірқатар (добавлены и, қ)",
+      "мемлекеттин → мемлекеттердің (изменено окончание)",
+      "елшисинен → елшілерінен (добавлены л, е)",
+      "сеним → сенім (добавлена и)",
+      "грамматаларын → хаттарын (заменено слово)",
+      "кабылдады → қабылдады (к→қ)"
+    ],
+    "exact": false,
+    "char_diff": 41,
+    "input_tokens": 167,
+    "output_tokens": 873,
+    "cost": 0.0
+  },
+  {
+    "model": "openai/gpt-oss-120b",
+    "id": "KZ-02",
+    "errors": [
+      "drop_hyphen"
+    ],
+    "corrupted": "Баспанада 50% ға дейін үлесі бар азаматтар мемлекеттік тұрғын үйді жекешелендіре алады",
+    "expected": "Баспанада 50%-ға дейін үлесі бар азаматтар мемлекеттік тұрғын үйді жекешелендіре алады",
+    "corrected": "Баспананың 50%-ға дейін үлесі бар азаматтар мемлекеттік тұрғын үйді жекешелендіре алады.",
+    "changes": [
+      "Replaced \"Баспанада\" with \"Баспананың\" to correct the noun and add the genitive suffix",
+      "Added hyphen after the percent sign, forming \"50%-ға\"",
+      "Removed the extra space before \"ға\"",
+      "Added a period at the end of the sentence"
+    ],
+    "exact": false,
+    "char_diff": 79,
+    "input_tokens": 165,
+    "output_tokens": 736,
+    "cost": 0.0
+  },
+  {
+    "model": "openai/gpt-oss-120b",
+    "id": "KZ-03",
+    "errors": [
+      "latin_homoglyph"
+    ],
+    "corrupted": "Aлaяқtарға ақшаңызды аударып қойсаңыз не істеу керек",
+    "expected": "Алаяқтарға ақшаңызды аударып қойсаңыз не істеу керек",
+    "corrected": "Алаяқтарға ақшаңызды аударып қойсаңыз не істеу керек?",
+    "changes": [
+      "Replaced Latin 'A' with Cyrillic 'А' in \"Aлaяқtарға\"",
+      "Replaced Latin 'l' with Cyrillic 'л' in \"Aлaяқtарға\"",
+      "Replaced Latin 'a' with Cyrillic 'а' in \"Aлaяқtарға\"",
+      "Replaced Latin 't' with Cyrillic 'т' in \"Aлaяқtарға\"",
+      "Added missing question mark at the end of the sentence"
+    ],
+    "exact": false,
+    "char_diff": 1,
+    "input_tokens": 161,
+    "output_tokens": 604,
+    "cost": 0.0
+  },
+  {
+    "model": "openai/gpt-oss-120b",
+    "id": "KZ-04",
+    "errors": [
+      "kaz_to_rus_partial"
+    ],
+    "corrupted": "Елде жалган дипломдар ушін қандай жаза қарастырылған",
+    "expected": "Елде жалған дипломдар үшін қандай жаза қарастырылған",
+    "corrected": "Елде жалған дипломдар үшін қандай жаза қарастырылған",
+    "changes": [
+      "жалган → жалған",
+      "ушін → үшін"
+    ],
+    "exact": true,
+    "char_diff": 0,
+    "input_tokens": 155,
+    "output_tokens": 504,
+    "cost": 0.0
+  },
+  {
+    "model": "openai/gpt-oss-120b",
+    "id": "KZ-05",
+    "errors": [
+      "join_words"
+    ],
+    "corrupted": "Алматыдағы ғимараттардыңқаншасы жер сілкінісіне төзімді",
+    "expected": "Алматыдағы ғимараттардың қаншасы жер сілкінісіне төзімді",
+    "corrected": "Алматыдағы ғимараттардың қаншасы жер сілкінісіне төзімді",
+    "changes": [
+      "Inserted space between \"ғимараттардың\" and \"қаншасы\""
+    ],
+    "exact": true,
+    "char_diff": 0,
+    "input_tokens": 160,
+    "output_tokens": 255,
+    "cost": 0.0
+  },
+  {
+    "model": "openai/gpt-oss-120b",
+    "id": "KZ-06",
+    "errors": [
+      "double_letter"
+    ],
+    "corrupted": "Елде жжеті айда 9,7 млн шаршы метр тұрғын үй пайдалануға берілді",
+    "expected": "Елде жеті айда 9,7 млн шаршы метр тұрғын үй пайдалануға берілді",
+    "corrected": "Елде жеті айда 9,7 млн шаршы метрлік тұрғын үй пайдалануға берілді",
+    "changes": [
+      "жжеті → жеті",
+      "шаршы метр → шаршы метрлік"
+    ],
+    "exact": false,
+    "char_diff": 30,
+    "input_tokens": 162,
+    "output_tokens": 404,
+    "cost": 0.0
+  },
+  {
+    "model": "openai/gpt-oss-120b",
+    "id": "KZ-07",
+    "errors": [
+      "kaz_to_rus",
+      "join_words"
+    ],
+    "corrupted": "Алаяктардан корганужолдары: елорда прокуратурасы ескерту жасады",
+    "expected": "Алаяқтардан қорғану жолдары: елорда прокуратурасы ескерту жасады",
+    "corrected": "Алаяқтардан қорғау жолдары: Елорда прокуратурасы ескерту жасады",
+    "changes": [
+      "Алаяктардан → Алаяқтардан",
+      "корганужолдары → қорғау жолдары",
+      "елорда → Елорда"
+    ],
+    "exact": false,
+    "char_diff": 47,
+    "input_tokens": 162,
+    "output_tokens": 649,
+    "cost": 0.0
+  },
+  {
+    "model": "openai/gpt-oss-120b",
+    "id": "KZ-08",
+    "errors": [
+      "latin_homoglyph",
+      "double_letter"
+    ],
+    "corrupted": "Дoнaлльд Tрамп Ким Чен Ынмен осы күзде қайта кездескісі келеді",
+    "expected": "Дональд Трамп Ким Чен Ынмен осы күзде қайта кездескісі келеді",
+    "corrected": "Дональд Трамп Ким Чен Ынмен осы күзде қайта кездескісі келеді",
+    "changes": [
+      "Дoнaлльд → Дональд (replaced Latin letters with Cyrillic and removed extra л)",
+      "Tрамп → Трамп (replaced Latin T with Cyrillic Т)"
+    ],
+    "exact": true,
+    "char_diff": 0,
+    "input_tokens": 165,
+    "output_tokens": 1020,
+    "cost": 0.0
+  }
+]

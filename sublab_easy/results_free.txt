@@ -1,0 +1,203 @@
+===== groq / openai/gpt-oss-120b =====
+
+--- turn 1 ---
+you: I am a third-year student. Which courses am I still eligible to register for?
+bot: **Your completed courses**
+
+- MAT-2020  
+- CSS‑3005  
+- ECN‑2101  
+- CSS‑3011  
+
+---
+
+### Courses you **could** register for (all rules satisfied)
+
+| Course | Credits | Prerequisite(s) | Seats remaining | Schedule |
+|--------|---------|----------------|----------------|----------|
+| **CSS‑4007 – Artificial Intelligence** | 6 | CSS‑3011 (you have completed) | 2 | Tue 09:00‑10:50 & Thu 09:00‑10:50 |
+| **CSS‑4102 – Distributed Systems** | 5 | CSS‑3005 (you have completed) | 15 | Tue 09:00‑10:50 |
+| **FIN‑3300 – Financial Modelling** | 5 | ECN‑2101 **and** MAT‑2020 (both completed) | 1 | Fri 11:00‑12:50 |
+
+**Why the other catalogued courses are not eligible**
+
+| Course | Reason for ineligibility |
+|--------|---------------------------|
+| CSS‑4400 – Natural Language Processing | **Full** – 0 seats remaining |
+| CSS‑3011 – Machine Learning Foundations | Already **completed** |
+| CSS‑3005 – Operating Systems | Already **completed** |
+| MAT‑2020 – Linear Algebra | Already **completed** |
+| ECN‑2101 – Microeconomics | Already **completed** |
+
+---
+
+### Note on possible schedule conflicts
+
+- **CSS‑4007** and **CSS‑4102** both meet **Tuesday 09:00‑10:50**.  
+  If you try to register for *both* in the same term, the system will reject one (or both) because of the overlapping time slot.  
+- **FIN‑3300** meets on Friday, so it does **not** clash with either of the above.
+
+You may choose any combination that respects the 15‑30 credit limit and avoids the Tuesday time‑slot clash. For example:
+
+- **CSS‑4007 + FIN‑3300** → 11 credits (still below the minimum, so you’d need at least one more eligible course, but none remain without conflict).  
+- **CSS‑4102 + FIN‑3300** → 10 credits (also below the minimum).  
+
+Since the only remaining courses are the three listed above, you would need to take **all three** to meet the minimum credit requirement (6 + 5 + 5 = 16 credits). However, doing so would create the Tuesday conflict between CSS‑4007 and CSS‑4102, so you cannot take all three together.
+
+**Possible ways to satisfy the credit requirement without conflicts**
+
+1. **Take CSS‑4007 + FIN‑3300** (6 + 5 = 11 credits) → *still below the 15‑credit minimum* → **not allowed**.  
+2. **Take CSS‑4102 + FIN‑3300** (5 + 5 = 10 credits) → *still below the minimum* → **not allowed**.  
+3. **Take only one of the three courses** → *credits < 15* → **not allowed**.
+
+**Conclusion:**  
+Given the current catalogue, there is **no conflict‑free combination** of courses that reaches the required 15‑credit minimum for this term. You would need to either:
+
+- **Wait for additional seats** to open in another course (e.g., CSS‑4400) that does not conflict, **or**  
+- **Contact the registrar** to request an exception or to see if any other courses (not listed here) are available for your programme.
+
+Feel free to let me know if you’d like to attempt registration for a specific course (accepting the conflict) or if you need assistance contacting the registrar for more options.
+     in=   868  out= 1148  $0.000000
+
+--- turn 2 ---
+you: Register me for CSS-4007 and CSS-4102.
+bot: **Registration attempt:** CSS‑4007 (Artificial Intelligence) **and** CSS‑4102 (Distributed Systems)
+
+### 1. Prerequisite check
+- **CSS‑4007** requires **CSS‑3011** – you have completed it. ✅  
+- **CSS‑4102** requires **CSS‑3005** – you have completed it. ✅  
+
+### 2. Seat availability
+- **CSS‑4007** – 2 seats remaining. ✅  
+- **CSS‑4102** – 15 seats remaining. ✅  
+
+### 3. Completed‑course check
+- You have **not** completed either CSS‑4007 or CSS‑4102. ✅  
+
+### 4. Schedule conflict
+- **CSS‑4007** meets **Tuesday 09:00‑10:50** (and Thursday 09:00‑10:50).  
+- **CSS‑4102** meets **Tuesday 09:00‑10:50**.
+
+Both courses occupy the **exact same time slot on Tuesday**, so they **overlap**.
+
+### Decision
+According to the registration rules, *“If two requested courses share the same day and overlapping time, refuse to register both and explain the conflict explicitly.”*  
+Therefore **I cannot register you for both courses in the same term**.
+
+---
+
+#### What you can do
+You may choose **one** of the two courses:
+
+| Option | Credits | Schedule | Seats remaining |
+|--------|---------|----------|-----------------|
+| **CSS‑4007** only | 6 | Tue 09:00‑10:50 & Thu 09:00‑10:50 | 2 |
+| **CSS‑4102** only | 5 | Tue 09:00‑10:50 | 15 |
+
+Please let me know which single course you would like to register for, or if you prefer to explore other available courses.
+     in=  1703  out=  464  $0.000000
+
+--- turn 3 ---
+you: How many credits would that be in total, and am I within the limit?
+bot: **Credits for the two courses you asked about**
+
+| Course | Credits |
+|--------|---------|
+| CSS‑4007 – Artificial Intelligence | 6 |
+| CSS‑4102 – Distributed Systems | 5 |
+| **Total** | **11 credits** |
+
+### Are you within the term limits?
+- **Maximum allowed:** 30 credits → **Yes**, 11 ≤ 30.  
+- **Minimum required:** 15 credits → **No**, 11 < 15.
+
+### What this means
+- Even if the schedule conflict were resolved, the combined 11 credits would still **fall short of the 15‑credit minimum** for a term.  
+- Because the two courses also **overlap on Tuesday 09:00‑10:50**, they cannot be taken together in the same term under the university’s registration rules.
+
+**Next steps you could take**
+
+1. **Choose just one of the two courses** (you would then need additional courses to reach at least 15 credits).  
+2. **Look for another course** that has available seats, satisfies your prerequisites, and does not clash with the chosen course.  
+3. **Wait for seats to open** in a currently full course (e.g., CSS‑4400) that could help you meet the credit minimum without conflicts.  
+
+Let me know which single course you’d like to register for, or if you’d like me to suggest other eligible courses that could bring you up to the required credit range.
+     in=  2122  out=  401  $0.000000
+
+--- turn 4 ---
+you: Add CSS-4090 Quantum Machine Learning to my schedule.
+bot: I’m sorry, but **CSS‑4090 Quantum Machine Learning** does not exist in the university’s course catalogue that I have access to. I cannot register you for a course that is not listed. If you’d like to add a different course from the catalogue, please let me know!
+     in=  2450  out=   97  $0.000000
+
+--- turn 5 ---
+you: Я студент третьего курса. На какие курсы я ещё могу записаться?
+bot: **Ваши уже пройденные дисциплины**
+
+- MAT‑2020  
+- CSS‑3005  
+- ECN‑2101  
+- CSS‑3011  
+
+---
+
+## Курсы, на которые Вы можете записаться (все условия выполнены)
+
+| Код | Наименование | Кредиты | Требования‑предшественники | Свободные места | Расписание |
+|-----|--------------|--------|----------------------------|----------------|------------|
+| **CSS‑4007** | Artificial Intelligence | 6 | CSS‑3011 (у Вас есть) | 2 | Вт 09:00‑10:50 и Чт 09:00‑10:50 |
+| **CSS‑4102** | Distributed Systems | 5 | CSS‑3005 (у Вас есть) | 15 | Вт 09:00‑10:50 |
+| **FIN‑3300** | Financial Modelling | 5 | ECN‑2101 **и** MAT‑2020 (у Вас есть) | 1 | Пт 11:00‑12:50 |
+
+### Почему остальные курсы из каталога недоступны
+
+| Код | Причина |
+|-----|---------|
+| CSS‑4400 | **Полностью заполнен** – 0 свободных мест |
+| CSS‑3011 | Вы уже **завершили** эту дисциплину |
+| CSS‑3005 | Вы уже **завершили** эту дисциплину |
+| MAT‑2020 | Вы уже **завершили** эту дисциплину |
+| ECN‑2101 | Вы уже **завершили** эту дисциплину |
+
+---
+
+## Важные ограничения по расписанию и кредитам
+
+1. **Конфликт расписания**  
+   - **CSS‑4007** и **CSS‑4102** проводят занятия **одновременно в вторник 09:00‑10:50**. Поэтому их нельзя взять в один семестр.  
+   - **FIN‑3300** проходит в пятницу, конфликтов с другими курсами нет.
+
+2. **Минимальный и максимальный кредитный лимит**  
+   - Минимум: **15 кредитов**  
+   - Максимум: **30 кредитов**  
+
+### Возможные варианты без конфликтов
+
+| Выбранные курсы | Сумма кредитов | Соответствует лимиту? | Комментарий |
+|-----------------|----------------|-----------------------|-------------|
+| CSS‑4007 + FIN‑3300 | 6 + 5 = 11 | **Нет** (меньше 15) | Нужно добавить ещё минимум 4 кредита, но других доступных курсов без конфликта нет. |
+| CSS‑4102 + FIN‑3300 | 5 + 5 = 10 | **Нет** (меньше 15) | То же самое. |
+| Только один курс | 5‑6 кредитов | **Нет** | Не удовлетворяет минимуму. |
+| **Все три курса** | 6 + 5 + 5 = 16 | **Да** (≥15) | **Но** CSS‑4007 и CSS‑4102 конфликтуют, поэтому такой набор невозможен. |
+
+### Итог
+
+С текущим набором доступных курсов **нет комбинации, которая одновременно**  
+- удовлетворяет требованию минимум 15 кредитов, **и**  
+- не имеет конфликтов расписания.
+
+#### Что можно сделать дальше
+1. **Ожидать появления свободных мест** в полном курсе **CSS‑4400** (Natural Language Processing) – он тоже требует CSS‑3011 и будет без конфликтов с другими выбранными курсами.  
+2. **Обратиться в регистратуру** с просьбой открыть дополнительные места или добавить альтернативный курс, соответствующий Вашей специальности.  
+3. **Выбрать один из доступных курсов** (например, CSS‑4007) и в дальнейшем дополнить расписание в следующем семестре.
+
+Если хотите, я могу сразу записать Вас на один из курсов (например, CSS‑4007 или CSS‑4102) или подготовить запрос в регистратуру о возможности открытия места в CSS‑4400. Пожалуйста, уточните, как Вы хотите действовать.
+     in=  2538  out= 1056  $0.000000
+
+                in    out        cost
+turn 1         868   1148    0.000000
+turn 2        1703    464    0.000000
+turn 3        2122    401    0.000000
+turn 4        2450     97    0.000000
+turn 5        2538   1056    0.000000
+                         ------------
+                    total    0.000000
